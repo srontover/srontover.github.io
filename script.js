@@ -305,13 +305,30 @@ const translations = {
   },
 };
 
+const readSavedLanguage = () => {
+  try {
+    return localStorage.getItem("preferredLanguage");
+  } catch {
+    return null;
+  }
+};
+
+const saveLanguage = (lang) => {
+  try {
+    localStorage.setItem("preferredLanguage", lang);
+  } catch {
+    // Language switching should still work when storage is unavailable.
+  }
+};
+
 if (yearNode) {
   yearNode.textContent = new Date().getFullYear();
 }
 
 const applyLanguage = (lang) => {
-  const dictionary = translations[lang] ?? translations.en;
-  document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+  const resolvedLang = translations[lang] ? lang : "en";
+  const dictionary = translations[resolvedLang];
+  document.documentElement.lang = resolvedLang === "zh" ? "zh-CN" : "en";
   document.title = dictionary.pageTitle;
 
   const description = document.querySelector('meta[name="description"]');
@@ -325,12 +342,12 @@ const applyLanguage = (lang) => {
   });
 
   langButtons.forEach((button) => {
-    const isActive = button.dataset.lang === lang;
+    const isActive = button.dataset.lang === resolvedLang;
     button.classList.toggle("active", isActive);
     button.setAttribute("aria-pressed", String(isActive));
   });
 
-  localStorage.setItem("preferredLanguage", lang);
+  saveLanguage(resolvedLang);
 };
 
 navToggle?.addEventListener("click", () => {
@@ -359,24 +376,28 @@ const setActiveNav = (id) => {
   });
 };
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    const visible = entries
-      .filter((entry) => entry.isIntersecting)
-      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
 
-    if (visible) {
-      setActiveNav(visible.target.id);
+      if (visible) {
+        setActiveNav(visible.target.id);
+      }
+    },
+    {
+      rootMargin: "-25% 0px -55% 0px",
+      threshold: [0.12, 0.25, 0.5],
     }
-  },
-  {
-    rootMargin: "-25% 0px -55% 0px",
-    threshold: [0.12, 0.25, 0.5],
-  }
-);
+  );
 
-sections.forEach((section) => observer.observe(section));
+  sections.forEach((section) => observer.observe(section));
+} else {
+  setActiveNav("home");
+}
 
-const savedLanguage = localStorage.getItem("preferredLanguage");
+const savedLanguage = readSavedLanguage();
 const browserLanguage = navigator.language?.toLowerCase().startsWith("zh") ? "zh" : "en";
-applyLanguage(savedLanguage || browserLanguage);
+applyLanguage(translations[savedLanguage] ? savedLanguage : browserLanguage);
