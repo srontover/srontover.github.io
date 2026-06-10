@@ -375,6 +375,7 @@ li {
 .hero-panel,
 .notice-card,
 .project-card,
+.patent-card,
 .interest-card,
 .skill-group,
 .award-card,
@@ -480,13 +481,19 @@ li {
   gap: var(--space-4);
 }
 
+.interest-grid.focused {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .interest-card,
-.skill-group {
+.skill-group,
+.engineering-item {
   padding: var(--space-5);
 }
 
 .interest-card p,
-.skill-group p {
+.skill-group p,
+.engineering-item p {
   margin: var(--space-3) 0 0;
   color: var(--color-muted);
 }
@@ -528,7 +535,8 @@ li {
 .project-card:hover,
 .interest-card:hover,
 .skill-group:hover,
-.award-card:hover {
+.award-card:hover,
+.engineering-item:hover {
   border-color: rgba(27, 95, 143, 0.28);
   box-shadow: var(--shadow-hover);
   transform: translateY(-2px);
@@ -591,6 +599,62 @@ li {
 .notice-card {
   padding: var(--space-5);
   color: var(--color-muted);
+}
+
+.patent-card {
+  padding: var(--space-6);
+}
+
+.patent-card h3 {
+  margin-bottom: var(--space-2);
+  font-size: clamp(1.15rem, 1.8vw, 1.45rem);
+}
+
+.cn-title {
+  margin-bottom: var(--space-5);
+  color: var(--color-accent-strong);
+  font-weight: 700;
+}
+
+.patent-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3) var(--space-5);
+  margin: var(--space-5) 0;
+  padding: var(--space-5) 0;
+  border-block: 1px solid var(--color-border);
+}
+
+.patent-meta div {
+  min-width: 0;
+}
+
+.patent-meta dt {
+  color: var(--color-muted);
+  font-size: 0.74rem;
+  font-weight: 760;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.patent-meta dd {
+  margin: var(--space-1) 0 0;
+  color: var(--color-text);
+  font-weight: 650;
+  overflow-wrap: anywhere;
+}
+
+.engineering-list {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.engineering-item {
+  border: 1px solid rgba(219, 227, 236, 0.95);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: var(--shadow-card);
+  transition: box-shadow 180ms ease, transform 180ms ease, border-color 180ms ease;
 }
 
 .award-card {
@@ -742,14 +806,20 @@ li {
   }
 
   .interest-grid,
+  .interest-grid.focused,
   .skills-grid {
     grid-template-columns: 1fr;
   }
 
   .project-card,
+  .patent-card,
   .hero-panel,
   .contact-card {
     padding: var(--space-5);
+  }
+
+  .patent-meta {
+    grid-template-columns: 1fr;
   }
 
   .award-card {
