@@ -1,0 +1,61 @@
+% !TEX program = xelatex
+\documentclass[10pt]{article}
+\usepackage{cvstyle}
+\setmainfont{Arial}
+\setsansfont{Arial}
+
+\begin{document}
+\cvname{XUEHAO XU}{ | Research CV}
+\cvcontact{Email: \href{mailto:xuxue6800@gmail.com}{xuxue6800@gmail.com} \quad | \quad GitHub: \href{https://github.com/srontover}{github.com/srontover} \quad | \quad Homepage: \href{https://srontover.github.io}{srontover.github.io}}
+
+\section{Research Interests}\color{black}
+Humanoid Robot Learning; Whole-Body Skill Learning; Reinforcement Learning; Motion Imitation; Motion Prior Learning; Sim-to-Real Transfer; Contact-Rich Robot Control
+
+\section{Education}\color{black}
+{\sffamily\color{cvnavy}\bfseries Nanjing University of Posts and Telecommunications (NJUPT)}\par
+\vspace{1pt}B.Eng. Candidate in Artificial Intelligence \quad | \quad Expected Graduation: 2028\par
+\vspace{1pt}GPA: 4.08/5.0 \quad | \quad Ranked 3/133 in Artificial Intelligence
+
+\section{Research Experience}\color{black}
+\cvproject{Learning Dynamic Skills for Humanoid Robots via Reinforcement Learning}{2026--Present}{T1 Humanoid Robot Kicking and Locomotion}
+\begin{itemize}
+  \item Implemented and modified reinforcement-learning environments for humanoid locomotion and contact-rich kicking tasks using MuJoCo/MJLab/Warp simulation workflows.
+  \item Implemented and evaluated task components including action and observation spaces, ball reset logic, contact detection, reward functions, termination conditions, and curriculum learning procedures.
+  \item Conducted experiments to analyze policy behavior through contact quality, ball velocity, target direction error, post-kick recovery, and training-stability metrics.
+  \item Investigating Conditional AMP and motion-prior-based kicking policies for skill generalization across different ball positions and kicking directions.
+\end{itemize}
+
+\cvproject{Conditional AMP for Generalizable Humanoid Kicking}{2026}{RL Research Project}
+\begin{itemize}
+  \item Investigated distance-conditioned Conditional AMP for humanoid kicking using condition vectors over target distance and kick type with curriculum learning.
+  \item Studying how expert-policy condition alignment and motion priors influence training stability and cross-condition skill generalization.
+\end{itemize}
+
+\cvproject{Motion Prior Learning for Humanoid Skill Acquisition}{2026}{Research Exploration}
+\begin{itemize}
+  \item Studying AMP-style motion priors, human motion data, encoder-decoder policies, and latent representations for humanoid skill learning.
+  \item Exploring methods for balancing task rewards and motion-prior rewards to achieve natural and effective robot behaviors.
+\end{itemize}
+
+\cvproject{Robot Hand-Eye Calibration with 3D Sensing and Geometric Constraints}{2026}{Research Project | Manuscript in Preparation | Nanjing University of Posts and Telecommunications}
+\begin{itemize}
+  \item Conducting research on robot hand-eye calibration with a completed patent application and ongoing manuscript preparation.
+  \item Investigating multi-stage calibration methods based on orthogonal geometric constraints, point-cloud filtering, and optimization.
+  \item Conducted calibration experiments with ABB industrial robots and 3D sensing systems for evaluation.
+\end{itemize}
+
+\section{Technical Skills}\color{black}
+\cvskill{Programming}{Python, C++, Git/GitHub, Linux}
+\cvskill{Machine Learning / RL}{PyTorch, Reinforcement Learning, PPO, reward design, curriculum learning}
+\cvskill{Robot Learning}{Humanoid motion control, contact-rich skill learning, motion imitation, AMP-style motion priors}
+\cvskill{Simulation}{MuJoCo, MJLab, Warp}
+\cvskill{Robotics Software}{ABB RAPID Programming, Robot Calibration, 3D Sensing, Point-Cloud Processing}
+
+\section{Awards}\color{black}
+\begin{itemize}
+  \item Third Place, RoboCup China Open 3D Simulation League, 2025.
+  \item Third Place, Jiangsu Provincial Robot Competition 3D Simulation Group, 2025.
+  \item Third Prize, National Undergraduate Electronic Design Contest, Jiangsu Province, 2024.
+\end{itemize}
+
+\end{document}

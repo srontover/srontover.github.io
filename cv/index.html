@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Xuehao Xu | CV</title>
+    <style>
+      :root { color-scheme: light; --ink: #172233; --muted: #617080; --blue: #1e6e96; --line: #d7e0e7; --paper: #f7f9fb; }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.6 Arial, "Microsoft YaHei", sans-serif; }
+      main { width: min(760px, calc(100% - 32px)); margin: 7rem auto; padding: 2.5rem; background: #fff; border: 1px solid var(--line); box-shadow: 0 16px 40px rgba(23,34,51,.08); }
+      .eyebrow { margin: 0 0 .5rem; color: var(--blue); font-size: .75rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+      h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.1rem); line-height: 1.1; }
+      p { color: var(--muted); }
+      .cv-list { display: grid; gap: 1rem; margin-top: 2rem; }
+      .cv-item { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 0; border-top: 1px solid var(--line); }
+      .cv-item strong { display: block; }
+      .links { display: flex; flex-wrap: wrap; gap: .55rem; justify-content: flex-end; }
+      a { color: var(--blue); font-weight: 700; text-decoration: none; }
+      a:hover, a:focus-visible { text-decoration: underline; }
+      @media (max-width: 600px) { main { margin: 2rem auto; padding: 1.4rem; } .cv-item { display: block; } .links { justify-content: flex-start; margin-top: .6rem; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">Academic Portfolio</p>
+      <h1>Xuehao Xu / 徐学颢</h1>
+      <p>Research CV files for robotics and artificial intelligence research applications.</p>
+      <div class="cv-list">
+        <div class="cv-item"><div><strong>English Research CV</strong><span>Robot Learning / Humanoid Control</span></div><div class="links"><a href="Xuehao_Xu_CV_EN.pdf">PDF</a><a href="Xuehao_Xu_CV_EN.tex">LaTeX</a><a href="../Xuehao_Xu_Research_CV_EN_v3.docx">Word</a></div></div>
+        <div class="cv-item"><div><strong>中文科研简历</strong><span>机器人学习 / 人形机器人控制</span></div><div class="links"><a href="Xuehao_Xu_CV_CN.pdf">PDF</a><a href="Xuehao_Xu_CV_CN.tex">LaTeX</a><a href="../Xuehao_Xu_Research_CV_CN_v3.docx">Word</a></div></div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{cvstyle}[2026/08/10 Research CV style]
+
+\RequirePackage[a4paper,margin=0.56in]{geometry}
+\RequirePackage{fontspec}
+\RequirePackage{xcolor}
+\RequirePackage{enumitem}
+\RequirePackage{titlesec}
+\RequirePackage{tabularx}
+\RequirePackage{hyperref}
+\RequirePackage{microtype}
+
+\definecolor{cvnavy}{HTML}{12314D}
+\definecolor{cvblue}{HTML}{1E6E96}
+\definecolor{cvmuted}{HTML}{5E6C77}
+\definecolor{cvrule}{HTML}{C8D4DE}
+
+\hypersetup{colorlinks=true,urlcolor=cvblue,linkcolor=cvblue}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=0.19in,labelsep=0.07in,itemsep=1.2pt,topsep=1pt,parsep=0pt,partopsep=0pt}
+\titleformat{\section}{\color{cvblue}\sffamily\bfseries\small}{ }{0pt}{}[\vspace{-3pt}{\color{cvrule}\rule{\linewidth}{0.45pt}}\color{black}]
+\titlespacing*{\section}{0pt}{7pt}{4pt}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\emergencystretch=2em
+
+\newcommand{\cvname}[2]{%
+  {\sffamily\color{cvnavy}\fontsize{21}{23}\selectfont\bfseries #1}\hspace{0.12em}%
+  {\sffamily\color{cvmuted}\fontsize{10.2}{12}\selectfont #2}\par\vspace{1pt}%
+}
+\newcommand{\cvcontact}[1]{%
+  {\sffamily\color{cvmuted}\fontsize{8.7}{10}\selectfont #1}\par
+  \vspace{2pt}\color{cvblue}\rule{\linewidth}{0.65pt}\vspace{1pt}%
+}
+\newcommand{\cvproject}[3]{%
+  {\sffamily\color{cvnavy}\fontsize{10.1}{11.5}\selectfont\bfseries #1}%
+  \hfill {\sffamily\color{cvmuted}\fontsize{9}{10}\selectfont\itshape #2}\par
+  {\sffamily\color{cvmuted}\fontsize{8.9}{10}\selectfont\itshape #3}\par\vspace{1pt}%
+}
+\newcommand{\cvskill}[2]{%
+  {\sffamily\color{cvnavy}\fontsize{9}{10.5}\selectfont\bfseries #1: }%
+  {\sffamily\color{black}\fontsize{9}{10.5}\selectfont #2}\par\vspace{1pt}%
+}
