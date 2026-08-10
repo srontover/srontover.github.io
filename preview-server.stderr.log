@@ -1,0 +1,15 @@
+127.0.0.1 - - [10/Aug/2026 14:22:19] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2026 14:22:19] "GET /styles.css?v=20260810-3 HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2026 14:22:19] "GET /script.js?v=20260810-3 HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2026 14:22:19] code 404, message File not found
+127.0.0.1 - - [10/Aug/2026 14:22:19] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [10/Aug/2026 14:22:53] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [10/Aug/2026 14:22:53] "GET /script.js?v=20260810-3 HTTP/1.1" 304 -
+127.0.0.1 - - [10/Aug/2026 14:23:28] "GET /Xuehao_Xu_Research_CV_EN_v2_optimized.docx HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2026 14:23:28] "GET /styles.css?v=20260810-3 HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2026 14:23:28] "GET /script.js?v=20260810-3 HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2026 14:23:37] "GET /Xuehao_Xu_Research_CV_EN_v2_optimized.docx HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2026 14:23:37] "GET /styles.css?v=20260810-3 HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2026 14:23:37] "GET /script.js?v=20260810-3 HTTP/1.1" 200 -
+127.0.0.1 - - [10/Aug/2026 14:28:51] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [10/Aug/2026 14:28:51] "GET /script.js?v=20260810-3 HTTP/1.1" 304 -
