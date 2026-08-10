@@ -12,24 +12,42 @@
       .eyebrow { margin: 0 0 .5rem; color: var(--blue); font-size: .75rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
       h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.1rem); line-height: 1.1; }
       p { color: var(--muted); }
-      .cv-list { display: grid; gap: 1rem; margin-top: 2rem; }
+      .download-panel { position: sticky; top: 1rem; z-index: 2; display: flex; flex-wrap: wrap; align-items: center; gap: .7rem 1.2rem; margin-top: 2rem; padding: 1rem 1.1rem; background: #f1f6f9; border: 1px solid var(--line); }
+      .download-panel strong { margin-right: auto; }
+      .cv-list { display: grid; gap: 2.5rem; margin-top: 2.5rem; }
       .cv-item { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 0; border-top: 1px solid var(--line); }
       .cv-item strong { display: block; }
       .cv-item span { color: var(--muted); }
       .links { display: flex; flex-wrap: wrap; gap: .55rem; justify-content: flex-end; }
       a { color: var(--blue); font-weight: 700; text-decoration: none; }
       a:hover, a:focus-visible { text-decoration: underline; }
-      @media (max-width: 600px) { main { margin: 2rem auto; padding: 1.4rem; } .cv-item { display: block; } .links { justify-content: flex-start; margin-top: .6rem; } }
+      .preview { overflow: hidden; border: 1px solid var(--line); background: #eef2f5; }
+      .preview h2 { margin: 0; padding: 1rem 1.1rem; background: #fff; font-size: 1.15rem; }
+      .preview iframe { display: block; width: 100%; height: min(980px, 120vh); border: 0; background: #fff; }
+      @media (max-width: 600px) { main { margin: 2rem auto; padding: 1.4rem; } .download-panel { position: static; } .download-panel strong { width: 100%; } .cv-item { display: block; } .links { justify-content: flex-start; margin-top: .6rem; } .preview iframe { height: 720px; } }
     </style>
   </head>
   <body>
     <main>
       <p class="eyebrow">Academic Portfolio</p>
       <h1>Xuehao Xu / &#24464;&#23398;&#39074;</h1>
-      <p>Research CV files for robotics and artificial intelligence research applications.</p>
+      <p>Research CV files for robotics and artificial intelligence research applications. Preview the CV below or download an editable version.</p>
+      <div class="download-panel" aria-label="CV downloads">
+        <strong>Download CV</strong>
+        <a href="Xuehao_Xu_CV_EN.pdf" download>English PDF</a>
+        <a href="Xuehao_Xu_CV_CN.pdf" download>&#20013;&#25991; PDF</a>
+        <a href="../Xuehao_Xu_Research_CV_EN_v3.docx" download>English Word</a>
+        <a href="../Xuehao_Xu_Research_CV_CN_v3.docx" download>&#20013;&#25991; Word</a>
+      </div>
       <div class="cv-list">
-        <div class="cv-item"><div><strong>English Research CV</strong><span>Robot Learning / Humanoid Control</span></div><div class="links"><a href="Xuehao_Xu_CV_EN.pdf">PDF</a><a href="Xuehao_Xu_CV_EN.tex">LaTeX</a><a href="../Xuehao_Xu_Research_CV_EN_v3.docx">Word</a></div></div>
-        <div class="cv-item"><div><strong>&#20013;&#25991;&#31185;&#30740;&#31616;&#21382;</strong><span>&#26426;&#22120;&#20154;&#23398;&#20064; / &#20154;&#24418;&#26426;&#22120;&#20154;&#25511;&#21046;</span></div><div class="links"><a href="Xuehao_Xu_CV_CN.pdf">PDF</a><a href="Xuehao_Xu_CV_CN.tex">LaTeX</a><a href="../Xuehao_Xu_Research_CV_CN_v3.docx">Word</a></div></div>
+        <section class="preview" aria-labelledby="english-preview-title">
+          <h2 id="english-preview-title">English Research CV</h2>
+          <iframe src="Xuehao_Xu_CV_EN.pdf#view=FitH" title="English Research CV preview"></iframe>
+        </section>
+        <section class="preview" aria-labelledby="chinese-preview-title">
+          <h2 id="chinese-preview-title">&#20013;&#25991;&#31185;&#30740;&#31616;&#21382;</h2>
+          <iframe src="Xuehao_Xu_CV_CN.pdf#view=FitH" title="&#20013;&#25991;&#31185;&#30740;&#31616;&#21382;&#39044;&#35272;"></iframe>
+        </section>
       </div>
     </main>
   </body>
