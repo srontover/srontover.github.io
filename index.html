@@ -40,13 +40,13 @@
         <div class="container hero-grid">
           <div class="hero-copy">
             <p class="eyebrow" data-i18n="heroEyebrow">Academic Portfolio | Robotics & AI</p>
-            <h1>Xuehao Xu <span lang="zh-CN">&#24464;&#23398;&#39026;</span></h1>
+            <h1>Xuehao Xu <span lang="zh-CN">&#24464;&#23398;&#39074;</span></h1>
             <p class="hero-title" data-i18n="heroTitle">Artificial Intelligence undergraduate focused on humanoid robot learning, reinforcement learning, and contact-rich robot control.</p>
             <p class="hero-text" data-i18n="heroText">I am building simulation-based learning workflows for humanoid locomotion and kicking, while exploring motion priors, Conditional AMP, and robust skill generalization. My robotics calibration work provides complementary experience with real robot systems and 3D sensing.</p>
             <div class="hero-actions" aria-label="Profile links">
               <a class="button primary" href="https://github.com/srontover" target="_blank" rel="noopener noreferrer">GitHub</a>
               <a class="button" href="mailto:xuxue6800@gmail.com">Email</a>
-              <a class="button" href="Xuehao_Xu_Research_CV_EN_v2_optimized.docx" target="_blank" rel="noopener noreferrer" data-i18n="cv">Research CV</a>
+              <a class="button" href="Xuehao_Xu_Research_CV_EN_v3.docx" target="_blank" rel="noopener noreferrer" data-i18n="cv">Research CV</a>
               <span class="button subtle disabled" aria-disabled="true" data-i18n="scholar">Google Scholar (TODO)</span>
             </div>
           </div>
@@ -56,7 +56,7 @@
             <dl class="snapshot-list">
               <div><dt data-i18n="snapshotAreaLabel">Primary Area</dt><dd data-i18n="snapshotArea">Humanoid Robot Learning & Reinforcement Learning</dd></div>
               <div><dt data-i18n="snapshotFocusLabel">Current Focus</dt><dd data-i18n="snapshotFocus">T1 kicking, Conditional AMP, reward design, distance-conditioned curriculum</dd></div>
-              <div><dt data-i18n="snapshotEngineeringLabel">Engineering Exposure</dt><dd data-i18n="snapshotEngineering">ABB robot calibration, 3D sensing, point-cloud processing</dd></div>
+              <div><dt data-i18n="snapshotEngineeringLabel">Engineering Exposure</dt><dd data-i18n="snapshotEngineering">ABB RAPID programming, robot calibration, 3D sensing</dd></div>
               <div><dt data-i18n="snapshotToolsLabel">Toolchain</dt><dd data-i18n="snapshotTools">Python, C++, PyTorch, MuJoCo, MJLab, Warp, Git, Linux</dd></div>
             </dl>
           </aside>
@@ -104,8 +104,8 @@
               <p class="muted" data-i18n="educationSchool">Nanjing University of Posts and Telecommunications (NJUPT)</p>
               <ul class="clean-list">
                 <li data-i18n="educationExpected">Expected Graduation: 2028</li>
-                <li data-i18n="educationGpa">GPA: 4.0 / 5.0</li>
-                <li data-i18n="educationRank">Ranked 4th among 133 students</li>
+                <li data-i18n="educationGpa">GPA: 4.08 / 5.0</li>
+                <li data-i18n="educationRank">Ranked 3 / 133 in Artificial Intelligence</li>
                 <li data-i18n="educationCoursework">Relevant coursework: Machine Learning, Deep Learning, Artificial Intelligence, Data Structures, Linear Algebra, Probability &amp; Mathematical Statistics.</li>
               </ul>
             </article>
@@ -122,16 +122,16 @@
           <div class="project-grid">
             <article class="project-card featured">
               <div class="project-meta"><span data-i18n="tagHumanoidRl">Humanoid RL</span><span>MuJoCo</span><span>MJLab</span><span>Warp</span></div>
-              <h3 data-i18n="project1Title">T1 Humanoid Kicking Task with Reinforcement Learning</h3>
-              <p data-i18n="project1Text">Investigating reinforcement learning methods for a T1 humanoid to perform contact-rich kicking while maintaining balance, selecting a support foot, and directing the ball toward a target.</p>
+              <h3 data-i18n="project1Title">Learning Dynamic Skills for Humanoid Robots via Reinforcement Learning</h3>
+              <p data-i18n="project1Text">Implemented and modified reinforcement-learning environments for T1 humanoid locomotion and contact-rich kicking tasks using MuJoCo/MJLab/Warp simulation workflows.</p>
               <div class="project-detail-grid">
                 <div>
                   <h4 data-i18n="problemGoal">Problem / Goal</h4><p data-i18n="project1Goal">Build a task and training workflow that connects locomotion stability, contact timing, ball interaction, and target-oriented control.</p>
                   <h4 data-i18n="contributions">My Contributions</h4>
                   <ul>
-                    <li data-i18n="project1Contribution1">Designed action and observation spaces, ball reset logic, contact detection, reward functions, termination conditions, and training metrics.</li>
-                    <li data-i18n="project1Contribution2">Developed reward terms and curricula for ball progress, direction, contact quality, post-kick recovery, and target distance.</li>
-                    <li data-i18n="project1Contribution3">Analyzed policy behavior through contact quality, ball velocity, target-direction error, termination causes, and training-stability diagnostics.</li>
+                    <li data-i18n="project1Contribution1">Implemented and evaluated task components including action and observation spaces, ball reset logic, contact detection, reward functions, termination conditions, and curriculum learning procedures.</li>
+                    <li data-i18n="project1Contribution2">Implemented and evaluated reward terms and curricula for ball progress, direction, contact quality, post-kick recovery, and target distance.</li>
+                    <li data-i18n="project1Contribution3">Conducted experiments to analyze policy behavior through contact quality, ball velocity, target-direction error, termination causes, and training-stability metrics.</li>
                   </ul>
                 </div>
                 <div><h4 data-i18n="outcome">Outcome / Progress</h4><p data-i18n="project1Outcome">The environment-to-training workflow is in place. Current iterations diagnose issues such as approaching without kicking, unstable foot selection, insufficient ball speed, and early termination; long-horizon task success remains under evaluation.</p></div>
@@ -141,7 +141,7 @@
             <article class="project-card">
               <div class="project-meta"><span data-i18n="tagLocomotion">Locomotion</span><span>PPO</span><span data-i18n="tagReward">Reward Design</span></div>
               <h3 data-i18n="project2Title">Humanoid Locomotion Policy Training</h3>
-              <p data-i18n="project2Text">Developed and studied a simulation-based locomotion policy as a foundation for later contact-rich tasks such as kicking.</p>
+              <p data-i18n="project2Text">Implemented and evaluated a simulation-based locomotion policy as a foundation for later contact-rich tasks such as kicking.</p>
               <h4 data-i18n="focus">Focus</h4>
               <ul>
                 <li data-i18n="project2Point1">State observation design using joint positions and velocities, body posture, angular velocity, and commanded velocity.</li>
@@ -154,7 +154,7 @@
             <article class="project-card">
               <div class="project-meta"><span data-i18n="tagConditionalAmp">Conditional AMP</span><span>Curriculum Learning</span><span data-i18n="tagInProgress">In Progress</span></div>
               <h3 data-i18n="project4Title">Conditional AMP for Generalizable Humanoid Kicking</h3>
-              <p data-i18n="project4Text">Exploring distance-conditioned humanoid kicking with AMP-style motion priors and a curriculum over target distance and kick type.</p>
+              <p data-i18n="project4Text">Investigated distance-conditioned humanoid kicking with AMP-style motion priors and a curriculum over target distance and kick type.</p>
               <h4 data-i18n="focus">Focus</h4>
               <ul>
                 <li data-i18n="project4Point1">Constructed condition vectors for kick type and normalized target distance, with aligned expert and policy condition distributions.</li>
@@ -165,7 +165,7 @@
 
             <article class="project-card">
               <div class="project-meta"><span data-i18n="tagMotionPrior">Motion Prior</span><span>AMP</span><span data-i18n="tagImitation">Imitation Learning</span></div>
-              <h3 data-i18n="project3Title">Motion Priors from Human Motion Data</h3>
+              <h3 data-i18n="project3Title">Motion Prior Learning for Humanoid Skill Acquisition</h3>
               <p data-i18n="project3Text">Research exploration on AMASS-style human motion data, AMP, encoder-decoder policies, and motion-latent representations for humanoid skill learning.</p>
               <h4 data-i18n="researchQuestions">Research Questions</h4>
               <ul>
@@ -182,7 +182,7 @@
         <div class="container two-column">
           <div><p class="section-kicker" data-i18n="worksKicker">Selected Works</p><h2 data-i18n="worksTitle">Patent Application &amp; Applied Robotics Work.</h2></div>
           <div class="patent-card">
-            <div class="project-meta"><span data-i18n="patentBadge">Published Patent Application</span><span>CN 121821412 A</span><span data-i18n="patentAreaTag">Applied Robotics</span></div>
+            <div class="project-meta"><span data-i18n="patentBadge">Published Patent Application</span><span>CN 121821412 A</span><span data-i18n="patentAreaTag">Applied Robotics</span><span data-i18n="patentManuscriptTag">Manuscript in Preparation</span></div>
             <h3 data-i18n="patentTitle">A Hand-Eye Calibration Method and System Based on Orthogonal-Constraint Pre-Calibration Guidance and Data Screening</h3>
             <p class="cn-title" lang="zh-CN" data-i18n="patentChineseTitle">&#19968;&#31181;&#22522;&#20110;&#27491;&#20132;&#32422;&#26463;&#30340;&#39044;&#26631;&#23450;&#24341;&#23548;&#19982;&#25968;&#25454;&#31579;&#36873;&#30340;&#25163;&#30524;&#26631;&#23450;&#26041;&#27861;&#21450;&#31995;&#32479;</p>
             <dl class="patent-meta">
@@ -205,7 +205,7 @@
             <article class="skill-group"><h3 data-i18n="skill2Title">Machine Learning / RL</h3><p data-i18n="skill2Text">PyTorch, reinforcement learning, PPO, reward design, curriculum learning</p></article>
             <article class="skill-group"><h3 data-i18n="skill3Title">Robot Learning</h3><p data-i18n="skill3Text">Humanoid motion control, contact-rich skill learning, motion imitation, AMP-style motion priors</p></article>
             <article class="skill-group"><h3 data-i18n="skill4Title">Simulation</h3><p data-i18n="skill4Text">MuJoCo, MJLab, Warp</p></article>
-            <article class="skill-group"><h3 data-i18n="skill5Title">Robotics Systems</h3><p data-i18n="skill5Text">ABB robot programming, hand-eye calibration, 3D sensing, point-cloud processing</p></article>
+            <article class="skill-group"><h3 data-i18n="skill5Title">Robotics Software</h3><p data-i18n="skill5Text">ABB RAPID programming, robot calibration, 3D sensing, point-cloud processing</p></article>
           </div>
         </div>
       </section>
