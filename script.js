@@ -12,25 +12,27 @@
   const zh = {
     navAbout: "关于我", navInterests: "研究兴趣", navEducation: "教育背景", navProjects: "项目", navWorks: "成果", navSkills: "技能", navAwards: "奖项", navContact: "联系",
     heroEyebrow: "学术作品集 | 机器人与人工智能",
-    heroTitle: "人工智能专业本科生，关注人形机器人学习、强化学习与接触丰富的机器人控制。",
-    heroText: "我正在为人形机器人的步态与踢球建立基于仿真的学习流程，同时探索运动先验、Conditional AMP 与技能泛化。机器人标定工作则为我提供了真实机器人系统和三维传感的补充工程经验。",
+    heroTitle: "人工智能专业本科生，关注让人形机器人学习可泛化的复杂身体技能。",
+    heroText: "我当前通过基于仿真的强化学习研究步态与踢球，并将研究方向拓展到移动操作、多技能策略、运动先验、面向身体控制的感知和仿真到真实研究；机器人标定工作则提供了补充性的真实机器人系统工程经验。",
     cv: "科研简历", scholar: "Google Scholar（待补充）",
-    snapshotTitle: "研究概览", snapshotAreaLabel: "主要方向", snapshotArea: "人形机器人学习与强化学习",
-    snapshotFocusLabel: "当前工作", snapshotFocus: "T1 踢球、Conditional AMP、奖励设计、距离条件课程学习",
+    snapshotTitle: "研究概览", snapshotAreaLabel: "主要方向", snapshotArea: "人形机器人的可泛化身体技能学习",
+    snapshotFocusLabel: "当前工作", snapshotFocus: "T1 踢球、步态、Conditional AMP 与技能泛化",
     snapshotEngineeringLabel: "工程经验", snapshotEngineering: "ABB RAPID 编程、机器人标定、三维传感",
     snapshotToolsLabel: "工具链", snapshotTools: "Python、C++、PyTorch、MuJoCo、MJLab、Warp、Git、Linux",
-    aboutKicker: "关于我", aboutTitle: "面向人形机器人学习的研究型工程实践。",
-    aboutText1: "我就读于南京邮电大学人工智能专业，研究兴趣集中在人形机器人学习、全身技能学习、强化学习、运动模仿和接触丰富控制。",
-    aboutText2: "当前工作通过仿真研究步态与踢球策略，涵盖奖励塑形、课程学习、策略诊断和 Conditional AMP。同时，手眼标定工作使我接触到 ABB 机器人系统、三维传感、点云数据与实际标定约束。",
-    interestsKicker: "研究兴趣", interestsTitle: "面向可泛化人形机器人技能的聚焦路径。",
-    interest1Title: "人形机器人学习", interest1Text: "学习人形机器人的步态与全身技能，关注稳定的接触丰富行为和协调运动。",
+    aboutKicker: "关于我", aboutTitle: "让人形机器人学习可泛化的复杂身体技能。",
+    aboutText1: "我就读于南京邮电大学人工智能专业，研究兴趣集中在人形机器人的可泛化身体技能学习，尤其关注动态全身行为、移动操作、强化学习、运动先验和接触丰富控制。",
+    aboutText2: "当前工作通过仿真研究步态与踢球策略，涵盖奖励塑形、课程学习、策略诊断和 Conditional AMP。我也在探索感知、学习动力学模型和仿真到真实因素如何支持更鲁棒的身体技能执行。同时，手眼标定工作使我接触到 ABB 机器人系统、三维传感、点云数据与实际标定约束。",
+    interestsKicker: "研究兴趣", interestsTitle: "围绕可泛化身体技能的拓展研究路径。",
+    interest1Title: "可泛化的人形技能学习", interest1Text: "学习能够适应不同目标、条件和任务变化的身体技能，而不是只解决单一固定行为。",
     interest2Title: "机器人强化学习", interest2Text: "面向机器人控制的任务设计、奖励塑形、课程学习、策略评估与诊断流程。",
-    interest3Title: "运动先验与模仿学习", interest3Text: "AMP 风格先验、人体运动数据、模仿学习与潜变量表征，用于获得自然且有效的机器人运动。",
-    interest4Title: "仿真到真实迁移", interest4Text: "未来研究方向：关注建模误差、观测噪声、动作延迟、接触建模与硬件约束下的鲁棒性。",
+    interest3Title: "移动操作与接触丰富技能", interest3Text: "结合身体移动、平衡、接触时机和物体交互，研究踢球与全身操作等动态技能。",
+    interest4Title: "运动先验与模仿学习", interest4Text: "AMP 风格先验、人体运动数据、模仿学习与潜变量表征，用于获得自然且有效的机器人运动。",
+    interest5Title: "面向身体控制的感知", interest5Text: "研究直接服务于技能执行的感知，包括物体状态、接触信息和面向控制的自中心观测。",
+    interest6Title: "仿真到真实与学习动力学", interest6Text: "未来研究方向：关注建模误差、观测噪声、动作延迟、接触建模、学习动力学和硬件约束。",
     educationKicker: "教育背景", educationTitle: "南京邮电大学", educationDate: "2024 年 9 月至今", educationDegree: "人工智能专业工学学士在读", educationSchool: "南京邮电大学（NJUPT）",
     educationExpected: "预计毕业时间：2028 年", educationGpa: "GPA：4.08 / 5.0", educationRank: "人工智能专业排名：3 / 133",
     educationCoursework: "相关课程：机器学习、深度学习、人工智能导论、数据结构、线性代数、概率论与数理统计。",
-    projectsKicker: "研究 / 项目", projectsTitle: "持续推进的人形控制、强化学习与运动先验研究。",
+    projectsKicker: "研究 / 项目", projectsTitle: "从动态技能学习走向可泛化的人形身体技能。",
     tagHumanoidRl: "人形强化学习", tagLocomotion: "步态控制", tagReward: "奖励设计", tagConditionalAmp: "Conditional AMP", tagInProgress: "进行中", tagMotionPrior: "运动先验", tagImitation: "模仿学习",
     project1Title: "通过强化学习学习人形机器人的动态技能", project1Text: "使用 MuJoCo/MJLab/Warp 仿真流程，为 T1 人形机器人的步态与接触丰富踢球任务实现并修改强化学习环境。",
     problemGoal: "问题 / 目标", project1Goal: "构建连接步态稳定、接触时机、球体交互与目标导向控制的任务与训练流程。", contributions: "我的贡献",
@@ -95,7 +97,7 @@
       if (element.dataset.i18nTitle === "backToTop") element.title = activeLanguage === "zh" ? zh.backToTop : "Back to top";
     });
     document.documentElement.lang = activeLanguage === "zh" ? "zh-CN" : "en";
-    document.title = activeLanguage === "zh" ? "徐学颢 | 人形机器人学习" : "Xuehao Xu | Humanoid Robot Learning";
+    document.title = activeLanguage === "zh" ? "徐学颢 | 可泛化人形机器人技能" : "Xuehao Xu | Generalizable Humanoid Robot Skills";
     languageButtons.forEach((button) => {
       const selected = button.dataset.lang === activeLanguage;
       button.classList.toggle("active", selected);
