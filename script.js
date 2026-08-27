@@ -43,7 +43,7 @@
     project2Title: "人形机器人步态策略训练", project2Text: "实现并评估基于仿真的步态策略，为踢球等后续接触丰富任务提供基础。", focus: "关注点",
     project2Point1: "使用关节位置与速度、机身姿态、角速度和速度指令进行状态观测设计。",
     project2Point2: "分析速度跟踪、姿态稳定、能耗惩罚、动作平滑、足部接触与机身高度约束之间的奖励权衡。",
-    project2Point3: "在将步态能力迁移至更复杂的全身任务前，开展策略行为诊断。", demoVideo: "演示视频",
+    project2Point3: "在将步态能力迁移至更复杂的全身任务前，开展策略行为诊断。", demoVideo: "演示视频", stage1Video: "第一阶段训练成果视频",
     project4Title: "面向可泛化人形踢球的 Conditional AMP", project4Text: "研究距离条件化的人形机器人踢球，结合 AMP 风格运动先验以及目标距离和踢法类型的课程学习。",
     project4Point1: "为踢法类型和归一化目标距离构建条件向量，并对齐 expert 与 policy 的条件分布。",
     project4Point2: "实现距离分桶、依目标距离变化的踢球后评估窗口，以及恢复课程状态的 checkpoint 支持。",
