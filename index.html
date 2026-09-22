@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Xuehao Xu's academic portfolio in artificial intelligence, humanoid robot learning, reinforcement learning, and robotics engineering.">
     <title>Xuehao Xu | Generalizable Humanoid Robot Skills</title>
-    <link rel="stylesheet" href="styles.css?v=20260810-4">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css?v=20260922-1">
   </head>
   <body>
     <header class="site-header">
@@ -22,6 +23,7 @@
           <li><a href="#about" data-i18n="navAbout">About</a></li>
           <li><a href="#interests" data-i18n="navInterests">Interests</a></li>
           <li><a href="#education" data-i18n="navEducation">Education</a></li>
+          <li><a href="#experience" data-i18n="navExperience">Experience</a></li>
           <li><a href="#projects" data-i18n="navProjects">Projects</a></li>
           <li><a href="#selected-works" data-i18n="navWorks">Works</a></li>
           <li><a href="#skills" data-i18n="navSkills">Skills</a></li>
@@ -42,7 +44,7 @@
             <p class="eyebrow" data-i18n="heroEyebrow">Academic Portfolio | Robotics & AI</p>
             <h1>Xuehao Xu <span lang="zh-CN">&#24464;&#23398;&#39074;</span></h1>
             <p class="hero-title" data-i18n="heroTitle">Artificial Intelligence undergraduate interested in learning generalizable physical skills for humanoid robots.</p>
-            <p class="hero-text" data-i18n="heroText">My current work studies locomotion and kicking through simulation-based reinforcement learning. I am expanding this direction toward loco-manipulation, multi-skill policies, motion priors, perception for physical control, and sim-to-real research, while keeping real robot calibration as complementary engineering experience.</p>
+            <p class="hero-text" data-i18n="heroText">I am currently receiving research training in humanoid robot learning at The Chinese University of Hong Kong, while independently studying locomotion and kicking through simulation-based reinforcement learning. My broader interests include loco-manipulation, unified skill policies, motion priors, perception for physical control, and future sim-to-real research.</p>
             <div class="hero-actions" aria-label="Profile links">
               <a class="button primary" href="https://github.com/srontover" target="_blank" rel="noopener noreferrer">GitHub</a>
               <a class="button" href="mailto:xuxue6800@gmail.com">Email</a>
@@ -55,7 +57,7 @@
             <div class="panel-heading"><span class="status-dot" aria-hidden="true"></span><span data-i18n="snapshotTitle">Research Snapshot</span></div>
             <dl class="snapshot-list">
               <div><dt data-i18n="snapshotAreaLabel">Primary Area</dt><dd data-i18n="snapshotArea">Generalizable Physical Skills for Humanoid Robots</dd></div>
-              <div><dt data-i18n="snapshotFocusLabel">Current Focus</dt><dd data-i18n="snapshotFocus">T1 kicking, locomotion, Conditional AMP, and skill generalization</dd></div>
+              <div><dt data-i18n="snapshotFocusLabel">Current Focus</dt><dd data-i18n="snapshotFocus">Unified policies, motion priors, T1 kicking, and locomotion</dd></div>
               <div><dt data-i18n="snapshotEngineeringLabel">Engineering Exposure</dt><dd data-i18n="snapshotEngineering">ABB RAPID programming, robot calibration, 3D sensing</dd></div>
               <div><dt data-i18n="snapshotToolsLabel">Toolchain</dt><dd data-i18n="snapshotTools">Python, C++, PyTorch, MuJoCo, MJLab, Warp, Git, Linux</dd></div>
             </dl>
@@ -71,7 +73,7 @@
           </div>
           <div class="section-body">
             <p data-i18n="aboutText1">I am an Artificial Intelligence undergraduate at Nanjing University of Posts and Telecommunications. My interests center on learning generalizable physical skills for humanoid robots, especially dynamic whole-body behaviors, loco-manipulation, reinforcement learning, motion priors, and contact-rich control.</p>
-            <p data-i18n="aboutText2">My current work uses simulation to study locomotion and kicking policies, including reward shaping, curriculum learning, policy diagnosis, and Conditional AMP. I am also exploring how perception, learned dynamics, and sim-to-real considerations can support robust physical skill execution. In parallel, my hand-eye calibration work has provided complementary experience with ABB robot systems, 3D sensing, point-cloud data, and practical calibration constraints.</p>
+            <p data-i18n="aboutText2">At The Chinese University of Hong Kong, I am receiving research training on humanoid learning questions including unified policies, motion priors, and task adaptation. Independently, I use simulation to study locomotion and kicking policies through reward shaping, curriculum learning, policy diagnosis, and Conditional AMP. My hand-eye calibration work provides complementary experience with ABB robot systems, 3D sensing, point-cloud data, and practical calibration constraints.</p>
           </div>
         </div>
       </section>
@@ -112,6 +114,27 @@
               </ul>
             </article>
           </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="container two-column">
+          <div>
+            <p class="section-kicker" data-i18n="experienceKicker">Research Experience</p>
+            <h2 data-i18n="experienceTitle">Research training and problem formulation in humanoid robot learning.</h2>
+          </div>
+          <article class="research-experience-card">
+            <div class="project-meta"><span data-i18n="experienceDate">Sep 2026 - Present</span><span data-i18n="experienceRemote">Remote</span></div>
+            <h3 data-i18n="experienceRole">Humanoid Robot Learning and Motion Prior Research</h3>
+            <p class="muted" data-i18n="experienceAffiliation">The Chinese University of Hong Kong | Research Intern (Remote)</p>
+            <p class="advisor-line" data-i18n="experienceAdvisors">Guided by Dr. Zike Yan (Tsinghua AIR) and Prof. Zhongyu Li (CUHK MAE).</p>
+            <h4 data-i18n="experienceFocusLabel">Current Research Focus</h4>
+            <ul>
+              <li data-i18n="experiencePoint1">Conducting literature review, paper presentations, research-question formulation, method discussion, and experimental planning around humanoid learning, whole-body control, motion imitation and task adaptation.</li>
+              <li data-i18n="experiencePoint2">Analyzing the tension between task objectives and motion priors, including fixed tracking, conditional relaxation, and multi-objective formulations.</li>
+              <li data-i18n="experiencePoint3">Exploring unified policies, skill transitions and OOD issues from discontinuous motion data, and motion guidance that does not rely heavily on joint-level tracking error.</li>
+            </ul>
+          </article>
         </div>
       </section>
 
@@ -183,8 +206,9 @@
 
       <section class="section" id="selected-works">
         <div class="container two-column">
-          <div><p class="section-kicker" data-i18n="worksKicker">Selected Works</p><h2 data-i18n="worksTitle">Patent Application &amp; Applied Robotics Work.</h2></div>
-          <div class="patent-card">
+          <div><p class="section-kicker" data-i18n="worksKicker">Selected Works</p><h2 data-i18n="worksTitle">Applied robotics and competition engineering experience.</h2></div>
+          <div class="work-stack">
+          <article class="patent-card">
             <div class="project-meta"><span data-i18n="patentBadge">Published Patent Application</span><span>CN 121821412 A</span><span data-i18n="patentAreaTag">Applied Robotics</span><span data-i18n="patentManuscriptTag">Manuscript in Preparation</span></div>
             <h3 data-i18n="patentTitle">A Hand-Eye Calibration Method and System Based on Orthogonal-Constraint Pre-Calibration Guidance and Data Screening</h3>
             <p class="cn-title" lang="zh-CN" data-i18n="patentChineseTitle">&#19968;&#31181;&#22522;&#20110;&#27491;&#20132;&#32422;&#26463;&#30340;&#39044;&#26631;&#23450;&#24341;&#23548;&#19982;&#25968;&#25454;&#31579;&#36873;&#30340;&#25163;&#30524;&#26631;&#23450;&#26041;&#27861;&#21450;&#31995;&#32479;</p>
@@ -196,6 +220,16 @@
               <div><dt data-i18n="patentInventorsLabel">Inventors</dt><dd data-i18n="patentInventors">Xuehao Xu, Dawei Ding, Kaiyan Zhang</dd></div>
             </dl>
             <p data-i18n="patentText">This published patent application presents a hand-eye calibration workflow for industrial robot systems using orthogonal line-edge constraints for pre-calibration, dynamic point-cloud data screening, and refinement optimization of the hand-eye transformation matrix. It is shown here as complementary applied robotics engineering experience, rather than my primary research direction.</p>
+          </article>
+          <article class="engineering-item">
+            <div class="project-meta"><span data-i18n="aimingBadge">Competition Engineering</span><span>OpenCV</span><span>Raspberry Pi</span><span>2025</span></div>
+            <h3 data-i18n="aimingTitle">Autonomous Aiming Device</h3>
+            <p data-i18n="aimingText">In a three-member team for the National Undergraduate Electronic Design Contest, I was responsible for vision perception and target tracking.</p>
+            <ul>
+              <li data-i18n="aimingPoint1">Built a real-time perception pipeline with a Raspberry Pi and industrial camera, using color-threshold segmentation, contour extraction, and circle detection to locate the target center.</li>
+              <li data-i18n="aimingPoint2">Provided target-position feedback at approximately 30 Hz; tuned thresholds and target-selection logic for motion disturbance, then integrated the interface with the gimbal and actuator-control modules for closed-loop aiming.</li>
+            </ul>
+          </article>
           </div>
         </div>
       </section>
@@ -219,7 +253,7 @@
           <div class="award-list">
             <article class="award-item"><div class="award-year">2025</div><div><h3 data-i18n="award1Title">Third Place, RoboCup China Open 3D Simulation League</h3><p data-i18n="award1Text">Core developer for the robot reinforcement learning environment, reward design, training workflow, formation behavior, and team communication.</p></div></article>
             <article class="award-item"><div class="award-year">2025</div><div><h3 data-i18n="award2Title">Third Place, Jiangsu Provincial Robot Competition, 3D Simulation Group</h3><p data-i18n="award2Text">Developed upper-level strategy components including pass evaluation, formation scheduling, and shooting decisions.</p></div></article>
-            <article class="award-item"><div class="award-year">2024</div><div><h3 data-i18n="award3Title">Third Prize, National Undergraduate Electronic Design Contest, Jiangsu Province</h3></div></article>
+            <article class="award-item"><div class="award-year">2025</div><div><h3 data-i18n="award3Title">Third Prize, National Undergraduate Electronic Design Contest, Jiangsu Province</h3><p data-i18n="award3Text">Vision perception and target-tracking lead for the Autonomous Aiming Device in a three-member team.</p></div></article>
           </div>
         </div>
       </section>
@@ -234,6 +268,6 @@
 
     <footer class="site-footer"><div class="container"><span>&copy; <span id="year"></span> Xuehao Xu.</span><span data-i18n="footerText">Built as an academic portfolio for robotics and AI research applications.</span></div></footer>
     <button class="back-to-top" type="button" aria-label="Back to top" data-i18n-title="backToTop">&#8593;</button>
-    <script src="script.js?v=20260827-1"></script>
+    <script src="script.js?v=20260922-1"></script>
   </body>
 </html>

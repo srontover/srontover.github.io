@@ -375,6 +375,7 @@ li {
 .hero-panel,
 .notice-card,
 .project-card,
+.research-experience-card,
 .patent-card,
 .interest-card,
 .skill-group,
@@ -533,6 +534,7 @@ li {
 }
 
 .project-card:hover,
+.research-experience-card:hover,
 .interest-card:hover,
 .skill-group:hover,
 .award-card:hover,
@@ -544,6 +546,26 @@ li {
 
 .project-card.featured {
   border-color: rgba(27, 95, 143, 0.28);
+}
+
+.research-experience-card {
+  padding: var(--space-6);
+}
+
+.research-experience-card h3 {
+  margin-bottom: var(--space-2);
+  font-size: clamp(1.25rem, 2vw, 1.55rem);
+}
+
+.research-experience-card .advisor-line {
+  margin-top: calc(var(--space-3) * -1);
+  color: var(--color-muted);
+  font-size: 0.94rem;
+}
+
+.research-experience-card ul,
+.engineering-item ul {
+  color: var(--color-muted);
 }
 
 .project-meta {
@@ -603,6 +625,11 @@ li {
 
 .patent-card {
   padding: var(--space-6);
+}
+
+.work-stack {
+  display: grid;
+  gap: var(--space-4);
 }
 
 .patent-card h3 {
@@ -742,7 +769,7 @@ li {
     box-shadow: var(--shadow-card);
   }
 
-  .nav-menu.open {
+  .nav-menu.is-open {
     display: flex;
   }
 
