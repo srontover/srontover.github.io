@@ -34,7 +34,7 @@
     educationCoursework: "相关课程：机器学习、深度学习、人工智能导论、数据结构、线性代数、概率论与数理统计。",
     experienceKicker: "科研经历", experienceTitle: "在人形机器人学习中进行科研训练与问题形成。",
     experienceDate: "2026 年 9 月至今", experienceRemote: "远程", experienceRole: "人形机器人学习与运动先验研究",
-    experienceAffiliation: "香港中文大学 | 科研实习生（远程）", experienceAdvisors: "指导：颜子钧博士（清华大学 AIR）、李钟毓助理教授（香港中文大学机械与自动化工程学系）。",
+    experienceAffiliation: "香港中文大学 | 科研实习生（远程）", experienceAdvisors: "指导：颜子轲博士（清华大学 AIR）、李钟毓助理教授（香港中文大学机械与自动化工程学系）。",
     experienceFocusLabel: "当前研究关注", experiencePoint1: "围绕人形机器人学习、全身控制、运动模仿和任务适应开展文献调研、论文汇报、研究问题提炼、方法讨论与实验规划。",
     experiencePoint2: "分析任务目标与运动先验之间的张力，包括固定跟踪、条件化放松和多目标优化思路。",
     experiencePoint3: "探索统一策略、非连续运动数据引起的技能衔接与 OOD 问题，以及不过度依赖关节级跟踪误差的动作引导方式。",
