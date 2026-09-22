@@ -1,0 +1,64 @@
+% !TEX program = xelatex
+\documentclass[10pt]{article}
+\usepackage{cvstyle}
+\setmainfont{Arial}
+\setsansfont{Arial}
+\geometry{top=0.42in,bottom=0.42in,left=0.56in,right=0.56in}
+\setlist[itemize]{itemsep=0pt,topsep=0pt,parsep=0pt,partopsep=0pt}
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+
+\begin{document}
+\fontsize{9}{10.2}\selectfont
+\cvname{XUEHAO XU}{ | Research CV}
+\cvcontact{Email: \href{mailto:xuxue6800@gmail.com}{xuxue6800@gmail.com} \quad | \quad GitHub: \href{https://github.com/srontover}{github.com/srontover} \quad | \quad Homepage: \href{https://srontover.github.io}{srontover.github.io}}
+
+\section{Research Interests}\color{black}
+Humanoid Robot Learning; Reinforcement Learning and Learning-Based Control; Motion Priors and Imitation Learning; Unified Skill Policies; Whole-Body Control; Contact-Rich Physical Skills; Sim-to-Real Transfer
+
+\section{Education}\color{black}
+{\sffamily\color{cvnavy}\bfseries Nanjing University of Posts and Telecommunications (NJUPT)}\par
+\vspace{1pt}B.Eng. Candidate in Artificial Intelligence \quad | \quad Expected Graduation: 2028\par
+\vspace{1pt}GPA: 4.08/5.0 \quad | \quad Ranked 3/133 in Artificial Intelligence
+
+\section{Research Experience}\color{black}
+\cvproject{Humanoid Robot Learning and Motion Prior Research}{Sep 2026--Present}{The Chinese University of Hong Kong | Research Intern (Remote) | Supervised by Dr. Zike Yan (Tsinghua AIR) and Prof. Zhongyu Li (CUHK MAE)}
+\begin{itemize}
+  \item Participating in research training on humanoid robot learning, whole-body control, motion imitation and motion priors, and task adaptation through literature review, paper presentations, research-question formulation, and experiment planning.
+  \item Reviewed RoboNaldo, Humanoid Goalkeeper, PAiD, PGMT, SMP, ADD, ConsMimic, and CMDP, analyzing conflicts between task objectives and motion imitation or priors, conditional relaxation, and multi-objective formulations.
+  \item Exploring unified policies, skill-transition and OOD issues from discontinuous motion data, and human-like motion guidance beyond joint-level tracking errors; planning reproduction of SMP and soccer-related baselines.
+\end{itemize}
+
+\cvproject{Reinforcement Learning for Dynamic Humanoid Skills}{2026--Present}{Independent Project | Booster T1 Locomotion, Kicking, and Conditional AMP Exploration}
+\begin{itemize}
+  \item Implemented and modified reinforcement-learning environments for a 23-DoF Booster T1 humanoid using MuJoCo, MJLab, and Warp; trained locomotion and kicking skills with PPO.
+  \item Configured 8,192 parallel environments and implemented observation and action spaces, ball-reset logic, contact detection, reward shaping, termination conditions, and curriculum learning.
+  \item Established a training and evaluation workflow for approach, stance adjustment, forward kicking, and recovery; analyzed contact quality, ball velocity, target-direction error, termination causes, and training stability. High-precision kicking accuracy remains under optimization.
+  \item Investigating Conditional AMP and motion-prior approaches for expert-motion and policy-condition alignment, skill generalization, and training stability.
+\end{itemize}
+
+\cvproject{Robot Hand-Eye Calibration with 3D Sensing and Geometric Constraints}{2026}{Nanjing University of Posts and Telecommunications | Research Project | Manuscript in Preparation}
+\begin{itemize}
+  \item Conducted hand-eye calibration research for industrial robot and 3D vision systems using an ABB IRB-120/IRC5 and Keyence LJ-X8000A/LJ-X8060 sensors, including robot motion, I/O triggering, profile acquisition, and system integration.
+  \item Designed and evaluated a multi-stage calibration workflow with orthogonal geometric pre-calibration, dynamic point-cloud screening, refinement optimization, and independent testing.
+  \item Collected multi-pose, multi-edge, and multi-point data and helped address practical system issues including robot zeroing, SMB battery maintenance, and trigger synchronization. Published patent application: CN121821412A; manuscript in preparation.
+\end{itemize}
+
+\section{Competition Engineering Experience}\color{black}
+\cvproject{Autonomous Aiming Device}{2024}{National Undergraduate Electronic Design Contest | Vision Perception and Target Tracking | Three-Member Team | Jiangsu Provincial Third Prize}
+\begin{itemize}
+  \item Built a real-time visual-processing pipeline with a Raspberry Pi and industrial camera; responsible for target detection, target-center localization, and continuous tracking.
+  \item Implemented color-threshold segmentation, contour extraction, and circle detection in OpenCV with approximately 30 Hz feedback; tuned thresholds and target-selection logic for vehicle and gimbal motion, then integrated the pipeline with gimbal and actuator-control modules for closed-loop aiming.
+\end{itemize}
+
+\section{Technical Skills}\color{black}
+\cvskill{Programming and Engineering}{Python, C++, Git/GitHub, Linux}
+\cvskill{ML and Robot Learning}{PyTorch, PPO, reward design, curriculum learning, humanoid motion control, motion imitation, motion priors, Conditional AMP}
+\cvskill{Simulation, Robotics, and Vision}{MuJoCo, MJLab, Warp, ABB RAPID, robot calibration, 3D sensing, point-cloud processing, OpenCV, target tracking, camera-control integration}
+
+\section{Honors}\color{black}
+\begin{itemize}
+  \item Third Place, RoboCup China Open 3D Simulation League, 2025.
+  \item Third Place, Jiangsu Provincial Robot Competition, 3D Simulation Group, 2025.
+\end{itemize}
+
+\end{document}

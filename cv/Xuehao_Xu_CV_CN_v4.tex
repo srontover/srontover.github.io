@@ -1,0 +1,64 @@
+% !TEX program = xelatex
+\documentclass[10pt]{article}
+\usepackage{cvstyle}
+\usepackage{xeCJK}
+\setmainfont{Arial}
+\setsansfont{Arial}
+\setCJKmainfont{Microsoft YaHei}
+\setCJKsansfont{Microsoft YaHei}
+
+\begin{document}
+\linespread{1.03}\selectfont
+\cvname{徐学颢}{ | 科研简历}
+\cvcontact{邮箱: \href{mailto:xuxue6800@gmail.com}{xuxue6800@gmail.com} \quad | \quad GitHub: \href{https://github.com/srontover}{github.com/srontover} \quad | \quad 个人主页: \href{https://srontover.github.io}{srontover.github.io}}
+
+\section{研究兴趣}\color{black}
+人形机器人学习；强化学习与学习控制；运动先验与模仿学习；统一技能策略；全身控制；接触丰富运动技能；仿真到真实迁移
+
+\section{教育经历}\color{black}
+{\sffamily\color{cvnavy}\bfseries 南京邮电大学（NJUPT）}\par
+\vspace{1pt}人工智能专业 工学学士候选人 \quad | \quad 预计毕业：2028 年\par
+\vspace{1pt}GPA：4.08/5.0 \quad | \quad 人工智能专业排名：3/133
+
+\section{科研经历}\color{black}
+\cvproject{人形机器人学习与运动先验研究}{2026.09--至今}{香港中文大学 | 科研实习生（远程） | 指导：颜子轲博士（清华大学 AIR）、李钟毓助理教授（香港中文大学机械与自动化工程学系）}
+\begin{itemize}
+  \item 围绕人形机器人学习、全身控制、运动模仿 / 运动先验与任务适应开展科研训练，包括文献调研、论文精读、Slide 汇报、研究问题提炼、方法讨论与实验规划。
+  \item 系统调研 RoboNaldo、Humanoid Goalkeeper、PAiD、PGMT、SMP、ADD、ConsMimic、CMDP 等工作，重点分析 task objective 与 motion imitation / motion prior 的冲突、条件化放松与多目标优化思路。
+  \item 当前关注 unified policy、非连续运动数据导致的 skill transition / OOD，以及不严重依赖 joint-level tracking error 的 human-like motion guidance；保持组内周级和 PI 双周级讨论，并计划复现 SMP 及足球相关基线。
+\end{itemize}
+
+\cvproject{Booster T1 人形机器人强化学习与动态技能训练}{2026--至今}{独立项目 | 步态、踢球与 Conditional AMP 探索}
+\begin{itemize}
+  \item 基于 23 DoF Booster T1，在 MuJoCo、MJLab 与 Warp 仿真工具链中实现并修改人形机器人强化学习训练环境，使用 PPO 训练 locomotion 与 kicking skill。
+  \item 配置 8192 个并行环境，完成观测与动作空间设计、球体重置、接触检测、奖励塑形、终止条件和课程学习等任务组件的实现与评估。
+  \item 已建立“接近足球-调整站位-向前踢球-恢复稳定姿态”的训练与评估流程，使用接触质量、球速、目标方向误差、终止原因与训练稳定性分析策略行为；高精度射门误差优化仍在进行。
+  \item 开展 Conditional AMP / motion-prior 探索，研究 expert motion 与 policy condition 的对齐、动作泛化及训练稳定性。
+\end{itemize}
+
+\cvproject{基于三维感知与几何约束的机器人手眼标定}{2026}{南京邮电大学 | 科研项目 | 论文工作推进中}
+\begin{itemize}
+  \item 面向工业机器人与三维视觉系统开展手眼标定研究，使用 ABB IRB-120 / IRC5 和 Keyence LJ-X8000A / LJ-X8060 完成机器人运动、IO 触发、轮廓采集与系统联调。
+  \item 设计并验证包含正交几何约束预标定、动态点云筛选、精细优化和独立测试的多阶段标定流程。
+  \item 完成多姿态、多边缘、多点数据采集，并参与处理机器人零点、SMB 电池、触发同步等实际系统问题；相关发明专利申请已公开：CN121821412A，论文工作仍在推进中。
+\end{itemize}
+
+\section{竞赛工程经历}\color{black}
+\cvproject{简易自行瞄准装置}{2024}{全国大学生电子设计竞赛 | 视觉感知与目标跟踪负责人 | 3 人团队 | 江苏省三等奖}
+\begin{itemize}
+  \item 基于 Raspberry Pi 与工业摄像头搭建实时视觉处理系统，负责目标检测、靶心定位与持续跟踪模块。
+  \item 使用 OpenCV 实现颜色阈值分割、轮廓提取与圆形检测，以约 30 Hz 向下游控制模块输出靶心位置信息；调试阈值与目标筛选逻辑以提升移动小车和云台运动下的跟踪稳定性，并与云台及执行机构控制模块联调，支持闭环目标跟踪和自动瞄准。
+\end{itemize}
+
+\section{技术能力}\color{black}
+\cvskill{编程与工程}{Python、C++、Git/GitHub、Linux}
+\cvskill{机器学习与机器人学习}{PyTorch、PPO、奖励设计、课程学习、人形机器人运动控制、运动模仿、运动先验、Conditional AMP}
+\cvskill{仿真、机器人与视觉系统}{MuJoCo、MJLab、Warp、ABB RAPID、机器人标定、三维感知、点云处理、OpenCV、目标跟踪、相机-控制接口联调}
+
+\section{竞赛与荣誉}\color{black}
+\begin{itemize}
+  \item RoboCup 中国公开赛 3D 仿真组第三名（2025）。
+  \item 江苏省机器人竞赛 3D 仿真组第三名（2025）。
+\end{itemize}
+
+\end{document}
