@@ -7,7 +7,7 @@ from docx.oxml.ns import qn
 from docx.shared import Inches, Pt, RGBColor
 
 
-OUTPUT = Path("Xuehao_Xu_Research_CV_EN_v4_editable.docx")
+OUTPUT = Path("Xuehao_Xu_Research_CV_EN_v4.docx")
 NAVY = "12314D"
 BLUE = "1E6E96"
 INK = "1D2730"

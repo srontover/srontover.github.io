@@ -7,7 +7,7 @@ from docx.oxml.ns import qn
 from docx.shared import Inches, Pt, RGBColor
 
 
-OUTPUT = Path("Xuehao_Xu_Research_CV_CN_v4_editable.docx")
+OUTPUT = Path("Xuehao_Xu_Research_CV_CN_v4.docx")
 NAVY = "12314D"
 BLUE = "1E6E96"
 INK = "1D2730"
@@ -65,7 +65,7 @@ def add_body(doc, text, before=0, after=2.5, size=9.15, color=INK, italic=False,
 def add_project_title(doc, title, date, subtitle):
     p = doc.add_paragraph()
     set_para(p, before=2, after=0.4, line=1.0, keep=True)
-    p.paragraph_format.tab_stops.add_tab_stop(Inches(7.12), WD_TAB_ALIGNMENT.RIGHT)
+    p.paragraph_format.tab_stops.add_tab_stop(Inches(7.40), WD_TAB_ALIGNMENT.RIGHT)
     set_font(p.add_run(title), 10.05, NAVY, bold=True)
     set_font(p.add_run(f"\t{date}"), 9.05, MUTED, italic=True)
     subtitle_para = doc.add_paragraph()
@@ -91,10 +91,13 @@ def add_skill(doc, label, value):
 def main():
     doc = Document()
     section = doc.sections[0]
-    section.top_margin = Inches(0.34)
-    section.bottom_margin = Inches(0.12)
-    section.left_margin = Inches(0.68)
-    section.right_margin = Inches(0.68)
+    # A4 gives the Chinese version enough vertical room without reducing type size.
+    section.page_width = Inches(8.27)
+    section.page_height = Inches(11.69)
+    section.top_margin = Inches(0.30)
+    section.bottom_margin = Inches(0.10)
+    section.left_margin = Inches(0.42)
+    section.right_margin = Inches(0.42)
     section.header_distance = Inches(0.25)
     section.footer_distance = Inches(0.08)
 
