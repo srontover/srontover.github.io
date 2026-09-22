@@ -164,7 +164,7 @@ def main():
             add_bullet(doc, bullet)
 
     add_section(doc, "COMPETITION ENGINEERING EXPERIENCE")
-    add_project_title(doc, "Autonomous Aiming Device", "2024", "National Undergraduate Electronic Design Contest | Vision Perception and Target Tracking | Three-Member Team | Jiangsu Provincial Third Prize")
+    add_project_title(doc, "Autonomous Aiming Device", "2025", "National Undergraduate Electronic Design Contest | Vision Perception and Target Tracking | Three-Member Team | Jiangsu Provincial Third Prize")
     for bullet in [
         "Built a real-time visual-processing pipeline with a Raspberry Pi and industrial camera; responsible for target detection, target-center localization, and continuous tracking.",
         "Implemented color-threshold segmentation, contour extraction, and circle detection in OpenCV with approximately 30 Hz feedback; tuned thresholds and target-selection logic for vehicle and gimbal motion, then integrated the pipeline with gimbal and actuator-control modules for closed-loop aiming.",
