@@ -75,7 +75,7 @@
     award2Title: "江苏省机器人竞赛 3D 仿真组季军", award2Text: "开发传球评分、阵型调度和射门决策等上层策略组件。",
     award3Title: "全国大学生电子设计竞赛江苏赛区三等奖", award3Text: "3 人团队中负责简易自行瞄准装置的视觉感知与目标跟踪模块。",
     leadershipKicker: "团队任职与服务", leadershipTitle: "Apollo 实验室",
-    apolloRole: "核心成员", apolloAffiliation: "南京邮电大学 Apollo 实验室",
+    apolloDate: "2025 年 9 月至今", apolloRole: "核心成员", apolloAffiliation: "南京邮电大学 Apollo 实验室",
     apolloResponsibilities: "负责组员培训与实验室日常事务管理。",
     beyondKicker: "科研之外", beyondTitle: "Counter-Strike", beyondText: "科研之外，我喜欢玩 Counter-Strike（反恐精英），目前为完美平台 S 段位。",
     contactKicker: "联系", contactTitle: "欢迎围绕研究与合作展开交流。", contactText: "我关注人形机器人学习、强化学习和具身智能方向的研究机会。",
