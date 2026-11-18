@@ -6,7 +6,7 @@
     <meta name="description" content="Xuehao Xu's academic portfolio in artificial intelligence, humanoid robot learning, reinforcement learning, and robotics engineering.">
     <title>Xuehao Xu | Generalizable Humanoid Robot Skills</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css?v=20260922-1">
+    <link rel="stylesheet" href="styles.css?v=20261118-1">
   </head>
   <body>
     <header class="site-header">
@@ -20,14 +20,10 @@
           <span></span><span></span><span></span>
         </button>
         <ul class="nav-menu" id="nav-menu">
-          <li><a href="#about" data-i18n="navAbout">About</a></li>
-          <li><a href="#interests" data-i18n="navInterests">Interests</a></li>
-          <li><a href="#education" data-i18n="navEducation">Education</a></li>
           <li><a href="#experience" data-i18n="navExperience">Experience</a></li>
+          <li><a href="#about" data-i18n="navAbout">About</a></li>
           <li><a href="#projects" data-i18n="navProjects">Projects</a></li>
           <li><a href="#selected-works" data-i18n="navWorks">Works</a></li>
-          <li><a href="#skills" data-i18n="navSkills">Skills</a></li>
-          <li><a href="#awards" data-i18n="navAwards">Awards</a></li>
           <li><a href="#contact" data-i18n="navContact">Contact</a></li>
         </ul>
         <div class="language-switch" aria-label="Language selection">
@@ -39,6 +35,9 @@
 
     <main id="home">
       <section class="hero section">
+        <div class="hero-visual" aria-hidden="true">
+          <img src="assets/booster-t1.jpg" alt="" width="1633" height="919" fetchpriority="high">
+        </div>
         <div class="container hero-grid">
           <div class="hero-copy">
             <p class="eyebrow" data-i18n="heroEyebrow">Academic Portfolio | Robotics & AI</p>
@@ -46,22 +45,39 @@
             <p class="hero-title" data-i18n="heroTitle">Artificial Intelligence undergraduate interested in learning generalizable physical skills for humanoid robots.</p>
             <p class="hero-text" data-i18n="heroText">My current focus is my remote research internship at The Chinese University of Hong Kong, exploring reliable long-horizon humanoid interaction. I am interested in learning behaviors that support future task success and using interaction history to inform decisions.</p>
             <div class="hero-actions" aria-label="Profile links">
-              <a class="button primary" href="https://github.com/srontover" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="button primary" href="#experience" data-i18n="heroResearch">Current Research</a>
+              <a class="button" href="https://github.com/srontover" target="_blank" rel="noopener noreferrer">GitHub</a>
               <a class="button" href="mailto:xuxue6800@gmail.com">Email</a>
               <a class="button" href="./cv/index.html" target="_blank" rel="noopener noreferrer" data-i18n="cv">Research CV</a>
-              <span class="button subtle disabled" aria-disabled="true" data-i18n="scholar">Google Scholar (TODO)</span>
+              <!-- TODO: Add a Google Scholar link when available. -->
             </div>
           </div>
 
-          <aside class="hero-panel" aria-label="Research snapshot">
-            <div class="panel-heading"><span class="status-dot" aria-hidden="true"></span><span data-i18n="snapshotTitle">Research Snapshot</span></div>
-            <dl class="snapshot-list">
-              <div><dt data-i18n="snapshotAreaLabel">Primary Area</dt><dd data-i18n="snapshotArea">Generalizable Physical Skills for Humanoid Robots</dd></div>
-              <div><dt data-i18n="snapshotFocusLabel">Current Focus</dt><dd data-i18n="snapshotFocus">Long-horizon interaction, failure analysis, adaptation, and recovery</dd></div>
-              <div><dt data-i18n="snapshotEngineeringLabel">Engineering Exposure</dt><dd data-i18n="snapshotEngineering">ABB RAPID programming, robot calibration, 3D sensing</dd></div>
-              <div><dt data-i18n="snapshotToolsLabel">Toolchain</dt><dd data-i18n="snapshotTools">Python, C++, PyTorch, MuJoCo, MJLab, Warp, Git, Linux</dd></div>
-            </dl>
-          </aside>
+          <div class="hero-caption">
+            <span data-i18n="heroDemoLabel">Previous project · Booster T1 simulation</span>
+            <a href="https://www.bilibili.com/video/BV1hbgn6gE2H/" target="_blank" rel="noopener noreferrer"><span data-i18n="heroDemo">Watch demo</span> <span aria-hidden="true">&#8599;</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="container two-column">
+          <div>
+            <p class="section-kicker" data-i18n="experienceKicker">Research Experience</p>
+            <h2 data-i18n="experienceTitle">Reliable long-horizon humanoid interaction.</h2>
+          </div>
+          <article class="research-experience-card">
+            <div class="project-meta"><span data-i18n="experienceDate">Sep 2026 - Present</span><span data-i18n="experienceRemote">Remote</span></div>
+            <h3 data-i18n="experienceRole">Humanoid Robot Learning Research</h3>
+            <p class="muted" data-i18n="experienceAffiliation">The Chinese University of Hong Kong | Research Intern (Remote)</p>
+            <p class="advisor-line" data-i18n="experienceAdvisors">Guided by Dr. Zike Yan (Tsinghua AIR) and Prof. Zhongyu Li (CUHK MAE).</p>
+            <h4 data-i18n="experienceFocusLabel">Current Research Focus</h4>
+            <ul>
+              <li data-i18n="experiencePoint1">Exploring how humanoids can learn behaviors that benefit later stages of a task and use interaction history to support decisions over longer horizons.</li>
+              <li data-i18n="experiencePoint2">Conducting PhysHSI baseline evaluation and controlled experiments on failure, recoverability, and correction timing; distinguishing intermediate completion from terminal task success.</li>
+              <li data-i18n="experiencePoint3">Combining literature review and research discussions with competing explanations and discriminating experiments. Current adaptation and recovery ideas remain exploratory; a reliable task-level benefit has not yet been established.</li>
+            </ul>
+          </article>
         </div>
       </section>
 
@@ -75,6 +91,17 @@
             <p data-i18n="aboutText1">I am an Artificial Intelligence undergraduate at Nanjing University of Posts and Telecommunications. My interests center on learning generalizable physical skills for humanoid robots, especially dynamic whole-body behaviors, loco-manipulation, reinforcement learning, motion priors, and contact-rich control.</p>
             <p data-i18n="aboutText2">At The Chinese University of Hong Kong, my recent work includes baseline evaluation, failure analysis, and controlled experiments on humanoid interaction, adaptation, and recovery. My earlier independent Booster T1 locomotion and kicking projects are currently on hold as I focus on this internship. Hand-eye calibration work has also given me experience with ABB robot systems, 3D sensing, point-cloud data, and practical hardware constraints.</p>
           </div>
+        </div>
+        <div class="container">
+          <aside class="hero-panel" aria-label="Research snapshot">
+            <div class="panel-heading"><span class="status-dot" aria-hidden="true"></span><span data-i18n="snapshotTitle">Research Snapshot</span></div>
+            <dl class="snapshot-list">
+              <div><dt data-i18n="snapshotAreaLabel">Primary Area</dt><dd data-i18n="snapshotArea">Generalizable Physical Skills for Humanoid Robots</dd></div>
+              <div><dt data-i18n="snapshotFocusLabel">Current Focus</dt><dd data-i18n="snapshotFocus">Long-horizon interaction, failure analysis, adaptation, and recovery</dd></div>
+              <div><dt data-i18n="snapshotEngineeringLabel">Engineering Exposure</dt><dd data-i18n="snapshotEngineering">ABB RAPID programming, robot calibration, 3D sensing</dd></div>
+              <div><dt data-i18n="snapshotToolsLabel">Toolchain</dt><dd data-i18n="snapshotTools">Python, C++, PyTorch, MuJoCo, MJLab, Warp, Git, Linux</dd></div>
+            </dl>
+          </aside>
         </div>
       </section>
 
@@ -114,27 +141,6 @@
               </ul>
             </article>
           </div>
-        </div>
-      </section>
-
-      <section class="section" id="experience">
-        <div class="container two-column">
-          <div>
-            <p class="section-kicker" data-i18n="experienceKicker">Research Experience</p>
-            <h2 data-i18n="experienceTitle">Reliable long-horizon humanoid interaction.</h2>
-          </div>
-          <article class="research-experience-card">
-            <div class="project-meta"><span data-i18n="experienceDate">Sep 2026 - Present</span><span data-i18n="experienceRemote">Remote</span></div>
-            <h3 data-i18n="experienceRole">Humanoid Robot Learning Research</h3>
-            <p class="muted" data-i18n="experienceAffiliation">The Chinese University of Hong Kong | Research Intern (Remote)</p>
-            <p class="advisor-line" data-i18n="experienceAdvisors">Guided by Dr. Zike Yan (Tsinghua AIR) and Prof. Zhongyu Li (CUHK MAE).</p>
-            <h4 data-i18n="experienceFocusLabel">Current Research Focus</h4>
-            <ul>
-              <li data-i18n="experiencePoint1">Exploring how humanoids can learn behaviors that benefit later stages of a task and use interaction history to support decisions over longer horizons.</li>
-              <li data-i18n="experiencePoint2">Conducting PhysHSI baseline evaluation and controlled experiments on failure, recoverability, and correction timing; distinguishing intermediate completion from terminal task success.</li>
-              <li data-i18n="experiencePoint3">Combining literature review and research discussions with competing explanations and discriminating experiments. Current adaptation and recovery ideas remain exploratory; a reliable task-level benefit has not yet been established.</li>
-            </ul>
-          </article>
         </div>
       </section>
 
@@ -286,8 +292,7 @@
       </section>
     </main>
 
-    <footer class="site-footer"><div class="container"><span>&copy; <span id="year"></span> Xuehao Xu.</span><span data-i18n="footerText">Built as an academic portfolio for robotics and AI research applications.</span></div></footer>
-    <button class="back-to-top" type="button" aria-label="Back to top" data-i18n-title="backToTop">&#8593;</button>
-    <script src="script.js?v=20261105-3"></script>
+    <footer class="site-footer"><div class="container footer-inner"><span>&copy; <span id="year"></span> Xuehao Xu</span><a href="#home"><span data-i18n="backToTop">Back to top</span> <span aria-hidden="true">&#8593;</span></a></div></footer>
+    <script src="script.js?v=20261118-1"></script>
   </body>
 </html>

@@ -4,17 +4,16 @@
   const navLinks = [...document.querySelectorAll(".nav-menu a")];
   const languageButtons = [...document.querySelectorAll(".lang-button")];
   const translatable = [...document.querySelectorAll("[data-i18n]")];
-  const titleTranslatable = [...document.querySelectorAll("[data-i18n-title]")];
   const year = document.querySelector("#year");
-  const backToTop = document.querySelector(".back-to-top");
   const english = Object.fromEntries(translatable.map((element) => [element.dataset.i18n, element.textContent.trim()]));
 
   const zh = {
-    navAbout: "关于我", navInterests: "研究兴趣", navEducation: "教育背景", navExperience: "科研经历", navProjects: "项目", navWorks: "成果", navSkills: "技能", navAwards: "奖项", navContact: "联系",
+    heroResearch: "当前研究", heroDemoLabel: "既往项目 · Booster T1 仿真", heroDemo: "观看演示",
+    navAbout: "关于我", navExperience: "科研经历", navProjects: "项目", navWorks: "成果", navContact: "联系",
     heroEyebrow: "学术作品集 | 机器人与人工智能",
     heroTitle: "人工智能专业本科生，关注让人形机器人学习可泛化的复杂身体技能。",
     heroText: "我目前主要投入香港中文大学的远程科研实习，探索长程人形机器人交互的可靠性，关注如何学习对后续任务有利的行为，以及如何利用交互历史支持决策。",
-    cv: "科研简历", scholar: "Google Scholar（待补充）",
+    cv: "科研简历",
     snapshotTitle: "研究概览", snapshotAreaLabel: "主要方向", snapshotArea: "人形机器人的可泛化身体技能学习",
     snapshotFocusLabel: "当前工作", snapshotFocus: "长程交互、失效分析、自主适应与恢复",
     snapshotEngineeringLabel: "工程经验", snapshotEngineering: "ABB RAPID 编程、机器人标定、三维传感",
@@ -79,7 +78,7 @@
     apolloResponsibilities: "负责组员培训与实验室日常事务管理。",
     beyondKicker: "科研之外", beyondTitle: "Counter-Strike", beyondText: "科研之外，我喜欢玩 Counter-Strike（反恐精英），目前为完美平台 S 段位。",
     contactKicker: "联系", contactTitle: "欢迎围绕研究与合作展开交流。", contactText: "我关注人形机器人学习、强化学习和具身智能方向的研究机会。",
-    footerText: "为机器人与人工智能科研申请构建的学术作品集。", backToTop: "返回顶部"
+    backToTop: "返回顶部"
   };
 
   const translations = { zh };
@@ -106,9 +105,6 @@
     translatable.forEach((element) => {
       const value = dictionary[element.dataset.i18n];
       if (value) element.textContent = value;
-    });
-    titleTranslatable.forEach((element) => {
-      if (element.dataset.i18nTitle === "backToTop") element.title = activeLanguage === "zh" ? zh.backToTop : "Back to top";
     });
     document.documentElement.lang = activeLanguage === "zh" ? "zh-CN" : "en";
     document.title = activeLanguage === "zh" ? "徐学颢 | 可泛化人形机器人技能" : "Xuehao Xu | Generalizable Humanoid Robot Skills";
@@ -145,8 +141,6 @@
     setActiveNav("home");
   }
 
-  window.addEventListener("scroll", () => backToTop?.classList.toggle("visible", window.scrollY > 640), { passive: true });
-  backToTop?.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
   languageButtons.forEach((button) => button.addEventListener("click", () => applyLanguage(button.dataset.lang)));
   if (year) year.textContent = new Date().getFullYear();
   applyLanguage(getSavedLanguage());
