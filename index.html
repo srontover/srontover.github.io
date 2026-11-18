@@ -6,7 +6,7 @@
     <meta name="description" content="Xuehao Xu's academic portfolio in artificial intelligence, humanoid robot learning, reinforcement learning, and robotics engineering.">
     <title>Xuehao Xu | Generalizable Humanoid Robot Skills</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css?v=20261118-2">
+    <link rel="stylesheet" href="styles.css?v=20261118-3">
   </head>
   <body>
     <header class="site-header">
@@ -35,10 +35,7 @@
 
     <main id="home">
       <section class="hero section">
-        <div class="hero-visual" aria-hidden="true">
-          <img src="assets/booster-t1.jpg" alt="" width="1633" height="919" fetchpriority="high">
-        </div>
-        <div class="container hero-grid">
+        <div class="container">
           <div class="hero-copy">
             <p class="eyebrow" data-i18n="heroEyebrow">Academic Portfolio | Robotics & AI</p>
             <h1>Xuehao Xu <span lang="zh-CN">&#24464;&#23398;&#39074;</span></h1>
@@ -53,10 +50,6 @@
             </div>
           </div>
 
-          <div class="hero-caption">
-            <span data-i18n="heroDemoLabel">Previous project · Booster T1 simulation</span>
-            <a href="https://www.bilibili.com/video/BV1hbgn6gE2H/" target="_blank" rel="noopener noreferrer"><span data-i18n="heroDemo">Watch demo</span> <span aria-hidden="true">&#8599;</span></a>
-          </div>
         </div>
       </section>
 
@@ -153,9 +146,18 @@
           </div>
           <div class="project-grid">
             <article class="project-card featured">
-              <div class="project-meta"><span data-i18n="tagHumanoidRl">Humanoid RL</span><span>MuJoCo</span><span>MJLab</span><span>Warp</span></div>
-              <h3 data-i18n="project1Title">Learning Dynamic Skills for Humanoid Robots via Reinforcement Learning</h3>
-              <p data-i18n="project1Text">Implemented and modified reinforcement-learning environments for T1 humanoid locomotion and contact-rich kicking tasks using MuJoCo/MJLab/Warp simulation workflows.</p>
+              <div class="project-overview">
+                <figure class="project-media">
+                  <img src="assets/booster-t1.jpg" alt="" width="1633" height="919" loading="lazy">
+                  <figcaption data-i18n="heroDemoLabel">Previous project · Booster T1 simulation</figcaption>
+                  <a class="text-link" href="https://www.bilibili.com/video/BV1hbgn6gE2H/" target="_blank" rel="noopener noreferrer"><span data-i18n="heroDemo">Watch demo</span> <span aria-hidden="true">&#8599;</span></a>
+                </figure>
+                <div>
+                  <div class="project-meta"><span data-i18n="tagHumanoidRl">Humanoid RL</span><span>MuJoCo</span><span>MJLab</span><span>Warp</span></div>
+                  <h3 data-i18n="project1Title">Learning Dynamic Skills for Humanoid Robots via Reinforcement Learning</h3>
+                  <p data-i18n="project1Text">Implemented and modified reinforcement-learning environments for T1 humanoid locomotion and contact-rich kicking tasks using MuJoCo/MJLab/Warp simulation workflows.</p>
+                </div>
+              </div>
               <div class="project-detail-grid">
                 <div>
                   <h4 data-i18n="problemGoal">Problem / Goal</h4><p data-i18n="project1Goal">Build a task and training workflow that connects locomotion stability, contact timing, ball interaction, and target-oriented control.</p>

@@ -1,5 +1,5 @@
 :root {
-  --color-bg: #f9faf7;
+  --color-bg: #fff;
   --color-surface: #ffffff;
   --color-surface-soft: #eff3ec;
   --color-text: #192821;
@@ -23,7 +23,7 @@
   --space-6: 2rem;
   --space-7: 3rem;
   --space-8: 4.5rem;
-  --container: 1200px;
+  --container: 1040px;
   --header-height: 72px;
 }
 
@@ -287,65 +287,55 @@ li {
 }
 
 .hero {
-  position: relative;
-  isolation: isolate;
-  background: #f7f9f5;
-  border-bottom: 1px solid var(--color-border);
-  padding: 5.25rem 0 1.5rem;
-}
-
-.hero-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 3.5rem;
-}
-
-.hero-visual {
-  position: absolute;
-  z-index: -1;
-  inset: 0 0 0 32%;
-  overflow: hidden;
-}
-
-.hero-visual img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 54% 62%;
-  transform: scale(1.28);
-  transform-origin: 30% 57%;
-  display: block;
-}
-
-.hero-visual::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, #f7f9f5, rgba(247, 249, 245, .94) 15%, transparent 46%);
-}
-
-.hero-caption {
-  justify-self: end;
-  display: flex;
-  flex-wrap: wrap;
-  gap: .25rem 1rem;
-  align-items: center;
-  padding: .45rem .7rem;
-  border-left: 3px solid var(--color-signal);
-  background: var(--color-bg);
-  color: var(--color-muted);
-  font-size: .82rem;
-}
-
-.hero-caption a {
-  color: var(--color-accent-strong);
-  font-weight: 720;
-  text-decoration: underline;
-  text-underline-offset: .18em;
+  padding: 4rem 0 3.25rem;
 }
 
 .hero-copy {
-  max-width: 33rem;
+  max-width: 46rem;
+}
+
+.hero h1 {
+  font-family: Georgia, "Times New Roman", "Songti SC", serif;
+  font-size: 4.4rem;
+  font-weight: 600;
+}
+
+.hero h1 span {
+  display: inline-block;
+  margin: 0 0 0 .35em;
+  font-size: 1.55rem;
+}
+
+.project-overview {
+  display: grid;
+  grid-template-columns: minmax(0, 15rem) minmax(0, 1fr);
+  align-items: start;
+  gap: var(--space-5);
+}
+
+.project-media {
+  margin: 0;
+}
+
+.project-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: 52% center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.project-media figcaption {
+  margin-top: .45rem;
+  color: var(--color-muted);
+  font-size: .85rem;
+}
+
+.project-media .text-link {
+  margin-top: .35rem;
 }
 
 .hero-copy .eyebrow {
@@ -800,34 +790,33 @@ li {
 }
 
 #experience {
-  background: #20382f;
-  color: #f4f8f3;
+  background: #f4f7f4;
+  border-block: 1px solid var(--color-border);
+  padding-block: 2.75rem;
 }
 
-#experience h2,
-#experience .section-kicker {
-  color: inherit;
+#experience .two-column {
+  grid-template-columns: minmax(0, 15rem) minmax(0, 1fr);
+  gap: var(--space-6);
+}
+
+#experience h2 {
+  font-size: 1.6rem;
 }
 
 .research-experience-card {
   background: transparent;
-  color: inherit;
   border: 0;
-  border-left: 1px solid #83a093;
+  border-left: 2px solid var(--color-accent);
   border-radius: 0;
   box-shadow: none;
   padding: 0 0 0 var(--space-5);
 }
 
-.research-experience-card :is(h3, h4, p),
-.research-experience-card .advisor-line {
-  color: inherit;
-}
-
 .research-experience-card:hover {
   box-shadow: none;
   transform: none;
-  border-color: #83a093;
+  border-color: var(--color-accent);
 }
 
 #about .hero-panel {
@@ -917,36 +906,18 @@ li {
     margin-left: auto;
   }
 
-  .hero-grid,
   .two-column,
   .contact-card {
     grid-template-columns: 1fr;
   }
 
   .hero {
-    padding: 2.5rem 0 1rem;
+    padding: 2.5rem 0;
   }
 
-  .hero-grid {
-    gap: 0;
-  }
-
-  .hero-visual {
-    inset: auto 0 0;
-    height: 12rem;
-  }
-
-  .hero-visual img {
-    object-position: center 68%;
-    transform-origin: 23% 67%;
-  }
-
-  .hero-visual::after {
-    background: linear-gradient(#f7f9f5, transparent 35%);
-  }
-
-  .hero-caption {
-    margin-top: 8rem;
+  #experience .two-column {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
   }
 
   h1 {
@@ -985,7 +956,7 @@ li {
   }
 
   .hero {
-    padding: 2rem 0 .8rem;
+    padding: 2rem 0;
   }
 
   .contact-actions {
@@ -1017,9 +988,21 @@ li {
     font-size: .94rem;
   }
 
-  .hero-caption {
-    margin-top: 7.5rem;
-    justify-self: stretch;
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero h1 span {
+    display: block;
+    margin: .25rem 0 0;
+  }
+
+  .project-overview {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .project-media {
+    max-width: 21rem;
   }
 
   .project-grid {
