@@ -8,6 +8,8 @@
   const english = Object.fromEntries(translatable.map((element) => [element.dataset.i18n, element.textContent.trim()]));
 
   const zh = {
+    researchNote0: "研究问题", researchNote1: "实验工作", researchNote2: "研究过程",
+    projectDetails: "技术细节",
     heroResearch: "当前研究", heroDemoLabel: "既往项目 · Booster T1 仿真", heroDemo: "观看演示",
     navAbout: "关于我", navExperience: "科研经历", navProjects: "项目", navWorks: "成果", navContact: "联系",
     heroEyebrow: "学术作品集 | 机器人与人工智能",
