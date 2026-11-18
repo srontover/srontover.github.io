@@ -615,7 +615,6 @@ li {
   font-size: 0.94rem;
 }
 
-.research-experience-card ul,
 .engineering-item ul {
   color: var(--color-muted);
 }
@@ -820,7 +819,7 @@ li {
   padding: 0 0 0 var(--space-5);
 }
 
-.research-experience-card :is(h3, h4, p, li),
+.research-experience-card :is(h3, h4, p),
 .research-experience-card .advisor-line {
   color: inherit;
 }
